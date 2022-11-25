@@ -155,7 +155,7 @@ class ResourceLeak {
         try {
             // EMB-ISSUE: CodeIssueNames.RESOURCE_LEAK/no-detect
             InputStream in1 = closer.register(openStream());
-            // EMB-ISSUE: CodeIssueNames.RESOURCE_LEAK/no-detect
+           
             InputStream in2 = closer.register(other.openStream());
             while (true) {
                 int read1 = ByteStreams.read(in1, buf1, 0, buf1.length);
