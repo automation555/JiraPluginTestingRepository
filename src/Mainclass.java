@@ -21,6 +21,8 @@ public class Mainclass {
 		                 System.out.println("Midde character is : "+midChar);
 		              System.out.println("Midde character is : "+midChar);
 		               System.out.println("Midde character is : "+midChar);
+		                System.out.println("Midde character is : "+midChar);
+		               System.out.println("Midde character is : "+midChar);
 
 	}
 
