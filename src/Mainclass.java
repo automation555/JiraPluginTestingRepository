@@ -17,6 +17,8 @@ public class Mainclass {
 				: (str.substring(0, mid - 1) + str.substring(mid + 1, str.length()));
 				System.out.println("Midde character is : "+midChar); 
 				System.out.println("Midde character is : "+midChar);
+		                System.out.println("Midde character is : "+midChar);
+		                 System.out.println("Midde character is : "+midChar);
 
 	}
 
