@@ -134,10 +134,13 @@ class ResourceLeak {
     public void processN1()	{
         Closer closer = Closer.create();
         try {
+		
+		int i=0;
             // EMB-ISSUE: CodeIssueNames.RESOURCE_LEAK/no-detect
             OutputStream out = closer.register(openStream());
             long written = ByteStreams.copy(input, out);
             out.flush(); // https://code.google.com/p/guava-libraries/issues/detail?id=1330
+		System.out.println("https://acellere.atlassian.net/browse/MBLD2020-8602");
             return written;
         } catch (Throwable e) {
             throw closer.rethrow(e);
@@ -170,6 +173,8 @@ class ResourceLeak {
             throw closer.rethrow(e);
         } finally {
             closer.close();
+		
+		
         }
     }
 }
